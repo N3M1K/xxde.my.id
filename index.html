@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxDev - IT Solutions</title>
+    <link rel="stylesheet" href="assets/styles/game.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <div id="gameContainer" class="game">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="m-cont" class="main-cont">
+        <p>xxDev</p>
+    </div>
+
+    <main>
+        <div id="backdrop" class="backdrop"></div>
+        <dialog id="service-modal" class="modal-content">
+            <div class="backdrop"></div>
+            <icon class="close-modal-button">&times;</icon>
+            <h2>Our Services</h2>
+
+            <p>Welcome to xxDev! We offer a comprehensive range of IT services tailored to meet your business needs.
+                Explore our
+                key services below:</p>
+
+            <h3>Custom Software Development</h3>
+            <ul>
+                <li><strong>Tailored Solutions:</strong> We create custom software solutions designed specifically for
+                    your
+                    business requirements.</li>
+                <li><strong>Advanced Technologies:</strong> Utilizing the latest technologies and frameworks to ensure
+                    high
+                    performance and scalability.</li>
+                <li><strong>User-Centric Design:</strong> Focused on delivering an exceptional user experience with
+                    intuitive
+                    design.</li>
+            </ul>
+
+            <h3>Web Development</h3>
+            <ul>
+                <li><strong>Responsive Websites:</strong> Developing websites that look great and function flawlessly on
+                    any
+                    device.</li>
+                <li><strong>E-Commerce Solutions:</strong> Building robust e-commerce platforms to enhance your online
+                    business.
+                </li>
+                <li><strong>SEO Optimization:</strong> Ensuring your website ranks well on search engines to attract
+                    more
+                    visitors.</li>
+            </ul>
+
+            <h3>Mobile App Development</h3>
+            <ul>
+                <li><strong>iOS and Android Apps:</strong> Creating high-quality mobile applications for both iOS and
+                    Android
+                    platforms.</li>
+                <li><strong>Cross-Platform Development:</strong> Offering cross-platform solutions to reach a wider
+                    audience.
+                </li>
+                <li><strong>User Engagement:</strong> Focusing on features that boost user engagement and retention.
+                </li>
+            </ul>
+
+            <h3>IT Consulting</h3>
+            <ul>
+                <li><strong>Strategic Planning:</strong> Offering expert advice to align your IT strategy with your
+                    business
+                    goals.</li>
+                <li><strong>Risk Management:</strong> Identifying and mitigating IT risks to protect your business.</li>
+                <li><strong>Technology Roadmap:</strong> Developing a roadmap to guide your technology investments and
+                    initiatives.</li>
+            </ul>
+
+            <h3>Cybersecurity</h3>
+            <ul>
+                <li><strong>Threat Analysis:</strong> Conducting thorough assessments to identify potential security
+                    threats.
+                </li>
+                <li><strong>Security Solutions:</strong> Implementing advanced security measures to protect your data
+                    and
+                    systems.</li>
+                <li><strong>Compliance:</strong> Ensuring your business meets all necessary regulatory requirements.
+                </li>
+            </ul>
+
+            <p>Feel free to contact us at <a href="mailto:contact@xxdev.com">contact@xxdev.com</a> to learn more about
+                how we
+                can help your business thrive with our cutting-edge IT services!</p>
+        </dialog>
+
+        <dialog id="projects-modal" class="modal-content">
+            <icon class="close-modal-button">&times;</icon>
+            <h2>Our projects</h2>
+            <div id="gallery" class="gallery"></div>
+            <div id="g-prev"></div>
+            <div class="btns"><button onclick="prev()">&lt;</button><button onclick="next()">&gt;</button></div>
+            <h2>Reviews</h2>
+            <div class="testim"></div>
+            <div class="btns">
+                <button onclick="tPrev()">&lt;</button>
+                <div id="t0" class="b"></div>
+                <div id="t1" class="b"></div>
+                <div id="t2" class="b"></div>
+                <button onclick="tNext()">&gt;</button></div>
+        </dialog>
+
+        <dialog id="contact-modal" class="modal-content">
+            <icon class="close-modal-button">&times;</icon>
+            <h2>Contact us!</h2>
+            <form id="c-form" action="/submit-form" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write something.." required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </dialog>
+    </main>
+
+    <script src="assets/scripts/game.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
